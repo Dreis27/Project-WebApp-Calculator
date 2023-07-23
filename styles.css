@@ -1,3 +1,10 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
 #container{
     border-radius: 15px;
     padding: 20px;
@@ -7,9 +14,32 @@
 #display{
     min-height: 120px;
     min-width: 356px;
-    font-size: 40px;
+    font-size: 60px;
     text-align: right;
     border: 2px black solid;
     border-radius: 5px;
     margin-bottom: 20px;
+}
+#button-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    height: 420px;
+}
+
+.clear{
+    grid-column: span 2;
+}
+
+.clear, .num, .operator{
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.operator{
+    background-color: rgb(134, 223, 223);
+}
+
+#equals{
+    background-color: rgb(233, 135, 135);
 }
