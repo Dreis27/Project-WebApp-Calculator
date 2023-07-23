@@ -1,0 +1,15 @@
+#container{
+    border-radius: 15px;
+    padding: 20px;
+    width: 400px;
+    border: 2px black solid
+}
+#display{
+    min-height: 120px;
+    min-width: 356px;
+    font-size: 40px;
+    text-align: right;
+    border: 2px black solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
