@@ -51,7 +51,7 @@ function addDecimal(){
     if (shouldReset) reset();
     if (screen.textContent === '')
         screen.textContent = '0';
-    if (screen.textContent.includes('.')) return;
+    if (screen.textContent.includes(".")) return
         screen.textContent += '.';
 }
 
