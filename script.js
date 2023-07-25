@@ -64,7 +64,7 @@ function deleteNum(){
 function evaluate(){
     if(currentOperation === null || shouldReset) return;
     if (currentOperation === '/' && screen.textContent === '0'){
-        alert("Can't divide by 0 mf");
+        alert("You can't divide by 0!");
         return;
     }
     operand2 = screen.textContent;
@@ -81,37 +81,21 @@ function setOperation(operator){
     shouldReset = true;
 }
 
-function add(a,b){
-    return a+b;
-}
-
-function subtract(a,b){
-    return a-b;
-}
-
-function divide(a,b){
-    return a/b;
-}
-
-function multiply(a,b){
-    return a*b;
-}
-
 function operate(operator, a, b){
     a = Number(a);
     b = Number(b);
     if(operator === '+'){
-        return add(a,b);
+        return a+b;
     }
     else if(operator === '-'){
-        return subtract(a,b);
+        return a-b;
     }
     else if(operator === '*'){
-        return multiply(a,b);
+        return a*b;
     }
     else if(operator === '/'){
         if(b===0) return null;
-        else return divide(a,b);
+        else return a/b;
     }
     else{
         return null;
